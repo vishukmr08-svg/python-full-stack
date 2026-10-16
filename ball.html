@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop&bounce</title>
+</head>
+<style>
+     .ball{
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border-radius: 50%;
+        animation: drop-up-down 2s infinite ease-in-out;
+    }
+    .stage{
+        height: 400px;
+        width: 100px;
+        border-bottom:4px solid #333;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+   
+    @keyframes drop-up-down{
+        0%{transform: translateY(0);}
+        50%{transform:translateY(-350px) ;}
+        100%{transform: translateY(0);}
+    }
+</style>
+<body>
+    <div class="stage"></div>
+    <div class="ball"></div>
+</body>
+</html>

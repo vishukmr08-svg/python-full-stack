@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: Arial,sans-serif;
+        padding: 60px;
+    }
+    h1{
+        position: relative;
+        width: fit-content;
+        cursor: pointer;
+    }
+    h1::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 4px;
+        background: aqua;
+        border-radius: 5px;
+        transition: width 0.4s ease;
+    }
+    h1:hover::after{
+        width: 100%;
+    }
+</style>
+<body>
+   <h1>My Property</h1> 
+</body>
+</html>

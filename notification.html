@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notificationbar</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+    }
+    .notification{
+        position: relative;
+        font-size: 70px;
+        animation: shake 0.8s ease-in-out infinite;
+    }
+    @keyframes shake{
+        0%{
+            transform: rotate(0);
+        }
+        25%{
+            transform: rotate(15deg);
+        }
+        50%{
+            transform: rotate(-15deg);
+        }
+        75%{
+            transform: rotate(10deg);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    }
+</style>
+<body>
+   <div class="notification">
+     🔔
+     <span class="badge"></span>
+   </div>
+    
+</body>
+</html>
